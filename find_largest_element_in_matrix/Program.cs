@@ -16,6 +16,19 @@ namespace find_largest_element_in_matrix
             x = new int[,] { { 12, 21, 63 }, { 40, 15, 6 } };
         }
 
+        void Printarray()
+        {
+            Console.WriteLine("Elements in the Given Matrix : ");
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(x[i, j] + "\t");
+                }
+                Console.WriteLine("\n");
+            }
+        }
+
 
 
         static void Main(string[] args)
