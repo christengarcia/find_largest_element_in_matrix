@@ -29,7 +29,7 @@ namespace find_largest_element_in_matrix
             }
         }
 
-        int max()
+        int Max()
         {
             int big = x[0, 0];
             for (int i = 0; i < 2; i++)
@@ -45,11 +45,12 @@ namespace find_largest_element_in_matrix
             return big;
         }
 
-
-
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            
+            ArraySample obj = new ArraySample();
+            obj.Printarray();
+            Console.WriteLine("Largest Element : {0}", obj.max());
+            Console.ReadLine();
         }
     }
 }
