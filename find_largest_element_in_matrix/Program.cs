@@ -29,6 +29,22 @@ namespace find_largest_element_in_matrix
             }
         }
 
+        int max()
+        {
+            int big = x[0, 0];
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (big < x[i, j])
+                    {
+                        big = x[i, j];
+                    }
+                }
+            }
+            return big;
+        }
+
 
 
         static void Main(string[] args)
